@@ -1,0 +1,293 @@
+{"kind":"deck","id":"pr/f6l6is","name":"Deck"}
+{"kind":"layout","layoutId":"c592c831-0345-4e35-824d-5103d7c9404d","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"538d4266-9c34-4e85-8373-49735040f8d3","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/soo4p9","slide":1,"title":"Assignment 2.1","textShapes":6}
+{"kind":"textbox","id":"sh/onyd0z61","slide":1,"name":"text","text":"Assignment 2.1","textPreview":"Assignment 2.1","textChars":14,"textLines":1,"bbox":[42,42,320,36]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":1,"name":"text","text":"Review of Subword Tokenization Algorithms","textPreview":"Review of Subword Tokenization Algorithms","textChars":41,"textLines":1,"bbox":[42,158,1030,210]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":1,"name":"text","text":"WordPiece, SentencePiece, and Unigram after BPE","textPreview":"WordPiece, SentencePiece, and Unigram after BPE","textChars":47,"textLines":1,"bbox":[42,412,720,86]}
+{"kind":"shape","id":"sh/dg7adsji","slide":1,"name":"accent-block","bbox":[922,128,276,392]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":1,"name":"text","text":"WordPiece\nSentencePiece\nUnigram","textPreview":"WordPiece | SentencePiece | Unigram","textChars":31,"textLines":3,"bbox":[956,246,220,152]}
+{"kind":"shape","id":"sh/vahoza1g","slide":1,"name":"accent","bbox":[922,544,276,22]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":1,"name":"source","text":"Sources: Schuster & Nakajima 2012; Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textPreview":"Sources: Schuster & Nakajima 2012; Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textChars":85,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":1,"name":"slide-number","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/soo4p9","slide":1,"text":""}
+{"kind":"slide","id":"sl/vm3jsr","slide":2,"title":"Stemming and lemmatization reduce words before tokenization","textShapes":7}
+{"kind":"textbox","id":"sh/90je9cvi","slide":2,"name":"text","text":"Stemming and lemmatization reduce words before tokenization","textPreview":"Stemming and lemmatization reduce words before tokenization","textChars":59,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/yd0z6103","slide":2,"name":"left-panel","bbox":[42,172,560,390]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":2,"name":"right-panel","bbox":[678,172,560,390]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":2,"name":"text","text":"Stemming","textPreview":"Stemming","textChars":8,"textLines":1,"bbox":[74,204,500,42]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":2,"name":"text","text":"- Rule-based reduction to a shared stem, often not a dictionary word\n- Lovins proposed a context-sensitive longest-match stemmer for English\n- Goal: make related forms match in retrieval and linguistic processing","textPreview":"- Rule-based reduction to a shared stem, often not a dictionary word | - Lovins proposed a context-sensitive longest-match stemmer for En...","textChars":212,"textLines":3,"bbox":[74,274,488,240]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":2,"name":"text","text":"Lemmatization","textPreview":"Lemmatization","textChars":13,"textLines":1,"bbox":[710,204,500,42]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":2,"name":"text","text":"- Maps an inflected form to its dictionary lemma\n- Uses vocabulary and morphology, so it is linguistically cleaner but heavier\n- Example contrast: computing -> comput (stem), computing -> compute (lemma)","textPreview":"- Maps an inflected form to its dictionary lemma | - Uses vocabulary and morphology, so it is linguistically cleaner but heavier | - Exam...","textChars":203,"textLines":3,"bbox":[710,274,488,240]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"name":"source","text":"Sources: Lovins 1968; standard NLP distinction summarized for lemmatization.","textPreview":"Sources: Lovins 1968; standard NLP distinction summarized for lemmatization.","textChars":76,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":2,"name":"slide-number","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/vm3jsr","slide":2,"text":""}
+{"kind":"slide","id":"sl/e72uat","slide":3,"title":"Classical normalization is useful, but it is not a replacement for subword to...","textShapes":7}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":3,"name":"text","text":"Classical normalization is useful, but it is not a replacement for subword tokenization","textPreview":"Classical normalization is useful, but it is not a replacement for subword tokenization","textChars":87,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":3,"name":"left-panel","bbox":[42,172,560,390]}
+{"kind":"shape","id":"sh/oj2t83it","slide":3,"name":"right-panel","bbox":[678,172,560,390]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":3,"name":"text","text":"Where it helps","textPreview":"Where it helps","textChars":14,"textLines":1,"bbox":[74,204,500,42]}
+{"kind":"textbox","id":"sh/61032lsz","slide":3,"name":"text","text":"- Search and IR can benefit when related forms should match\n- Morphological normalization can reduce surface variation\n- It is interpretable when language rules are available","textPreview":"- Search and IR can benefit when related forms should match | - Morphological normalization can reduce surface variation | - It is interp...","textChars":174,"textLines":3,"bbox":[74,274,488,240]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":3,"name":"text","text":"Why BPE-style tokenizers still matter","textPreview":"Why BPE-style tokenizers still matter","textChars":37,"textLines":1,"bbox":[710,204,500,42]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":3,"name":"text","text":"- Neural models need reversible token sequences, not just normalized stems\n- Subword tokenization keeps spelling evidence and handles new strings\n- For multilingual NLP, language-specific stemming rules do not scale cleanly","textPreview":"- Neural models need reversible token sequences, not just normalized stems | - Subword tokenization keeps spelling evidence and handles n...","textChars":223,"textLines":3,"bbox":[710,274,488,240]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":3,"name":"source","text":"Sources: Lovins 1968; Wu et al. 2016; Kudo & Richardson 2018.","textPreview":"Sources: Lovins 1968; Wu et al. 2016; Kudo & Richardson 2018.","textChars":61,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":3,"name":"slide-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/e72uat","slide":3,"text":""}
+{"kind":"slide","id":"sl/c406g4","slide":4,"title":"BPE solved open vocabulary pressure, but its greedy frequency rule left room ...","textShapes":18}
+{"kind":"textbox","id":"sh/ovahoza1","slide":4,"name":"text","text":"BPE solved open vocabulary pressure, but its greedy frequency rule left room for alternatives","textPreview":"BPE solved open vocabulary pressure, but its greedy frequency rule left room for alternatives","textChars":93,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/vahoza1g","slide":4,"name":"step-0","bbox":[42,214,262,210]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":4,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,238,64,34]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":4,"name":"text","text":"Word vocabularies break","textPreview":"Word vocabularies break","textChars":23,"textLines":1,"bbox":[66,286,214,60]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":4,"name":"text","text":"Names, numbers, dates, and rich morphology create many unseen word forms.","textPreview":"Names, numbers, dates, and rich morphology create many unseen word forms.","textChars":73,"textLines":1,"bbox":[66,358,214,46]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":4,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[320,296,38,36]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":4,"name":"step-1","bbox":[347,214,262,210]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":4,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[371,238,64,34]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":4,"name":"text","text":"BPE merges often","textPreview":"BPE merges often","textChars":16,"textLines":1,"bbox":[371,286,214,60]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":4,"name":"text","text":"BPE builds upward by repeatedly merging frequent adjacent symbols.","textPreview":"BPE builds upward by repeatedly merging frequent adjacent symbols.","textChars":66,"textLines":1,"bbox":[371,358,214,46]}
+{"kind":"textbox","id":"sh/vixczed8","slide":4,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[625,296,38,36]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":4,"name":"step-2","bbox":[652,214,262,210]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":4,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[676,238,64,34]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":4,"name":"text","text":"But frequency is local","textPreview":"But frequency is local","textChars":22,"textLines":1,"bbox":[676,286,214,60]}
+{"kind":"textbox","id":"sh/val87ed8","slide":4,"name":"text","text":"A frequent pair is not always the pair that best explains the corpus probabilistically.","textPreview":"A frequent pair is not always the pair that best explains the corpus probabilistically.","textChars":87,"textLines":1,"bbox":[676,358,214,46]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":4,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[930,296,38,36]}
+{"kind":"shape","id":"sh/dcbulwva","slide":4,"name":"step-3","bbox":[957,214,262,210]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":4,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[981,238,64,34]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":4,"name":"text","text":"Alternatives ask more","textPreview":"Alternatives ask more","textChars":21,"textLines":1,"bbox":[981,286,214,60]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":4,"name":"text","text":"WordPiece and Unigram add likelihood-based objectives; SentencePiece removes pre-tokenization assumptions.","textPreview":"WordPiece and Unigram add likelihood-based objectives; SentencePiece removes pre-tokenization assumptions.","textChars":106,"textLines":1,"bbox":[981,358,214,46]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":4,"name":"source","text":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textPreview":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textChars":59,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":4,"name":"slide-number","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/c406g4","slide":4,"text":""}
+{"kind":"slide","id":"sl/pb6r2u","slide":5,"title":"WordPiece builds a vocabulary by choosing pieces that improve corpus likelihood","textShapes":18}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":5,"name":"text","text":"WordPiece builds a vocabulary by choosing pieces that improve corpus likelihood","textPreview":"WordPiece builds a vocabulary by choosing pieces that improve corpus likelihood","textChars":79,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":5,"name":"step-0","bbox":[42,214,262,210]}
+{"kind":"textbox","id":"sh/lwval87e","slide":5,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,238,64,34]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":5,"name":"text","text":"Start small","textPreview":"Start small","textChars":11,"textLines":1,"bbox":[66,286,214,60]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":5,"name":"text","text":"Begin from characters or short units plus boundary conventions.","textPreview":"Begin from characters or short units plus boundary conventions.","textChars":63,"textLines":1,"bbox":[66,358,214,46]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":5,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[320,296,38,36]}
+{"kind":"shape","id":"sh/loj2t83i","slide":5,"name":"step-1","bbox":[347,214,262,210]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":5,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[371,238,64,34]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":5,"name":"text","text":"Score candidates","textPreview":"Score candidates","textChars":16,"textLines":1,"bbox":[371,286,214,60]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":5,"name":"text","text":"Unlike BPE's raw frequency rule, WordPiece uses a likelihood objective.","textPreview":"Unlike BPE's raw frequency rule, WordPiece uses a likelihood objective.","textChars":71,"textLines":1,"bbox":[371,358,214,46]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":5,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[625,296,38,36]}
+{"kind":"shape","id":"sh/loj2t83i","slide":5,"name":"step-2","bbox":[652,214,262,210]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":5,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[676,238,64,34]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":5,"name":"text","text":"Grow vocabulary","textPreview":"Grow vocabulary","textChars":15,"textLines":1,"bbox":[676,286,214,60]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":5,"name":"text","text":"Add the candidate that best improves the training corpus model.","textPreview":"Add the candidate that best improves the training corpus model.","textChars":63,"textLines":1,"bbox":[676,358,214,46]}
+{"kind":"textbox","id":"sh/lwval87e","slide":5,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[930,296,38,36]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":5,"name":"step-3","bbox":[957,214,262,210]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":5,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[981,238,64,34]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":5,"name":"text","text":"Segment greedily","textPreview":"Segment greedily","textChars":16,"textLines":1,"bbox":[981,286,214,60]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":5,"name":"text","text":"At tokenization time, known words are broken into vocabulary pieces.","textPreview":"At tokenization time, known words are broken into vocabulary pieces.","textChars":68,"textLines":1,"bbox":[981,358,214,46]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":5,"name":"source","text":"Sources: Schuster & Nakajima 2012; Wu et al. 2016; Kudo 2018, footnote on WordPiece likelihood.","textPreview":"Sources: Schuster & Nakajima 2012; Wu et al. 2016; Kudo 2018, footnote on WordPiece likelihood.","textChars":95,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":5,"name":"slide-number","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/pb6r2u","slide":5,"text":""}
+{"kind":"slide","id":"sl/hwdsbe","slide":6,"title":"The ## prefix marks that a piece continues a word","textShapes":7}
+{"kind":"textbox","id":"sh/xczed8v6","slide":6,"name":"text","text":"The ## prefix marks that a piece continues a word","textPreview":"The ## prefix marks that a piece continues a word","textChars":49,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":6,"name":"left-panel","bbox":[42,172,560,390]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":6,"name":"right-panel","bbox":[678,172,560,390]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":6,"name":"text","text":"Example","textPreview":"Example","textChars":7,"textLines":1,"bbox":[74,204,500,42]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":6,"name":"text","text":"- playing -> play + ##ing\n- unaffable -> un + ##aff + ##able\n- The prefix is metadata, not part of the original spelling","textPreview":"- playing -> play + ##ing | - unaffable -> un + ##aff + ##able | - The prefix is metadata, not part of the original spelling","textChars":120,"textLines":3,"bbox":[74,274,488,240]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":6,"name":"text","text":"Why it exists","textPreview":"Why it exists","textChars":13,"textLines":1,"bbox":[710,204,500,42]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":6,"name":"text","text":"- It preserves word-internal position after splitting\n- It helps distinguish a standalone token from a continuation token\n- GNMT used a related boundary marker, _, to make word recovery unambiguous","textPreview":"- It preserves word-internal position after splitting | - It helps distinguish a standalone token from a continuation token | - GNMT used...","textChars":197,"textLines":3,"bbox":[710,274,488,240]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":6,"name":"source","text":"Sources: Wu et al. 2016; Devlin et al. 2018 for BERT WordPiece convention.","textPreview":"Sources: Wu et al. 2016; Devlin et al. 2018 for BERT WordPiece convention.","textChars":74,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":6,"name":"slide-number","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/hwdsbe","slide":6,"text":""}
+{"kind":"slide","id":"sl/xvi7jr","slide":7,"title":"Unigram reverses the direction: start large, then prune","textShapes":18}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":7,"name":"text","text":"Unigram reverses the direction: start large, then prune","textPreview":"Unigram reverses the direction: start large, then prune","textChars":55,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/bat47y1k","slide":7,"name":"step-0","bbox":[42,214,262,210]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":7,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,238,64,34]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":7,"name":"text","text":"Seed many pieces","textPreview":"Seed many pieces","textChars":16,"textLines":1,"bbox":[66,286,214,60]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":7,"name":"text","text":"Initialize with a large candidate vocabulary.","textPreview":"Initialize with a large candidate vocabulary.","textChars":45,"textLines":1,"bbox":[66,358,214,46]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":7,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[320,296,38,36]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":7,"name":"step-1","bbox":[347,214,262,210]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":7,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[371,238,64,34]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":7,"name":"text","text":"Estimate probabilities","textPreview":"Estimate probabilities","textChars":22,"textLines":1,"bbox":[371,286,214,60]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":7,"name":"text","text":"Use a unigram language model over possible segmentations.","textPreview":"Use a unigram language model over possible segmentations.","textChars":57,"textLines":1,"bbox":[371,358,214,46]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":7,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[625,296,38,36]}
+{"kind":"shape","id":"sh/4byhgn29","slide":7,"name":"step-2","bbox":[652,214,262,210]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":7,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[676,238,64,34]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":7,"name":"text","text":"Remove weak pieces","textPreview":"Remove weak pieces","textChars":18,"textLines":1,"bbox":[676,286,214,60]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":7,"name":"text","text":"Prune tokens whose removal least reduces corpus likelihood.","textPreview":"Prune tokens whose removal least reduces corpus likelihood.","textChars":59,"textLines":1,"bbox":[676,358,214,46]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":7,"name":"text","text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[930,296,38,36]}
+{"kind":"shape","id":"sh/t83itgfm","slide":7,"name":"step-3","bbox":[957,214,262,210]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":7,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[981,238,64,34]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":7,"name":"text","text":"Keep ambiguity","textPreview":"Keep ambiguity","textChars":14,"textLines":1,"bbox":[981,286,214,60]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":7,"name":"text","text":"The model can assign probabilities to multiple segmentations.","textPreview":"The model can assign probabilities to multiple segmentations.","textChars":61,"textLines":1,"bbox":[981,358,214,46]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":7,"name":"source","text":"Sources: Kudo 2018.","textPreview":"Sources: Kudo 2018.","textChars":19,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":7,"name":"slide-number","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/xvi7jr","slide":7,"text":""}
+{"kind":"slide","id":"sl/rsofwu","slide":8,"title":"SentencePiece packages subword learning as language-independent raw-text toke...","textShapes":7}
+{"kind":"textbox","id":"sh/s72x4nap","slide":8,"name":"text","text":"SentencePiece packages subword learning as language-independent raw-text tokenization","textPreview":"SentencePiece packages subword learning as language-independent raw-text tokenization","textChars":85,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/3m94fu18","slide":8,"name":"left-panel","bbox":[42,172,560,390]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":8,"name":"right-panel","bbox":[678,172,560,390]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":8,"name":"text","text":"Core design","textPreview":"Core design","textChars":11,"textLines":1,"bbox":[74,204,500,42]}
+{"kind":"textbox","id":"sh/sji5snel","slide":8,"name":"text","text":"- It trains directly from raw sentences instead of requiring pre-tokenized words\n- Whitespace is escaped as a normal symbol, enabling lossless detokenization\n- It supports both BPE and Unigram algorithms","textPreview":"- It trains directly from raw sentences instead of requiring pre-tokenized words | - Whitespace is escaped as a normal symbol, enabling l...","textChars":203,"textLines":3,"bbox":[74,274,488,240]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":8,"name":"text","text":"Why this matters","textPreview":"Why this matters","textChars":16,"textLines":1,"bbox":[710,204,500,42]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":8,"name":"text","text":"- Pre-tokenizers are language-specific and brittle for scripts without spaces\n- The same pipeline can be used for Japanese, English, and multilingual corpora\n- Raw-text training helps make the tokenizer a reproducible model artifact","textPreview":"- Pre-tokenizers are language-specific and brittle for scripts without spaces | - The same pipeline can be used for Japanese, English, an...","textChars":232,"textLines":3,"bbox":[710,274,488,240]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":8,"name":"source","text":"Sources: Kudo & Richardson 2018.","textPreview":"Sources: Kudo & Richardson 2018.","textChars":32,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/svu9knih","slide":8,"name":"slide-number","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/rsofwu","slide":8,"text":""}
+{"kind":"slide","id":"sl/160h6u","slide":9,"title":"BPE, WordPiece, and Unigram differ most in how they build and choose vocabulary","textShapes":33}
+{"kind":"textbox","id":"sh/4zidonyd","slide":9,"name":"text","text":"BPE, WordPiece, and Unigram differ most in how they build and choose vocabulary","textPreview":"BPE, WordPiece, and Unigram differ most in how they build and choose vocabulary","textChars":79,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/fepkzupw","slide":9,"name":"h-0","bbox":[42,148,196,54]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":9,"name":"text","text":"Dimension","textPreview":"Dimension","textChars":9,"textLines":1,"bbox":[54,162,172,24]}
+{"kind":"shape","id":"sh/xc3ylc7u","slide":9,"name":"h-1","bbox":[238,148,260,54]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":9,"name":"text","text":"BPE","textPreview":"BPE","textChars":3,"textLines":1,"bbox":[250,162,236,24]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":9,"name":"h-2","bbox":[498,148,250,54]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":9,"name":"text","text":"WordPiece","textPreview":"WordPiece","textChars":9,"textLines":1,"bbox":[510,162,226,24]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":9,"name":"h-3","bbox":[748,148,240,54]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":9,"name":"text","text":"Unigram LM","textPreview":"Unigram LM","textChars":10,"textLines":1,"bbox":[760,162,216,24]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":9,"name":"h-4","bbox":[988,148,250,54]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":9,"name":"text","text":"SentencePiece","textPreview":"SentencePiece","textChars":13,"textLines":1,"bbox":[1000,162,226,24]}
+{"kind":"shape","id":"sh/oj2t83it","slide":9,"name":"r0c0","bbox":[42,202,196,76]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":9,"name":"text","text":"Build direction","textPreview":"Build direction","textChars":15,"textLines":1,"bbox":[54,213,172,58]}
+{"kind":"shape","id":"sh/61032lsz","slide":9,"name":"r0c1","bbox":[238,202,260,76]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":9,"name":"text","text":"Bottom-up merges","textPreview":"Bottom-up merges","textChars":16,"textLines":1,"bbox":[250,213,236,58]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":9,"name":"r0c2","bbox":[498,202,250,76]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":9,"name":"text","text":"Bottom-up candidate growth","textPreview":"Bottom-up candidate growth","textChars":26,"textLines":1,"bbox":[510,213,226,58]}
+{"kind":"shape","id":"sh/6tovahoz","slide":9,"name":"r0c3","bbox":[748,202,240,76]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":9,"name":"text","text":"Top-down pruning","textPreview":"Top-down pruning","textChars":16,"textLines":1,"bbox":[760,213,216,58]}
+{"kind":"shape","id":"sh/r65wjudg","slide":9,"name":"r0c4","bbox":[988,202,250,76]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":9,"name":"text","text":"Framework for BPE or Unigram","textPreview":"Framework for BPE or Unigram","textChars":28,"textLines":1,"bbox":[1000,213,226,58]}
+{"kind":"shape","id":"sh/9cvixcze","slide":9,"name":"r1c0","bbox":[42,278,196,76]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":9,"name":"text","text":"Candidate choice","textPreview":"Candidate choice","textChars":16,"textLines":1,"bbox":[54,289,172,58]}
+{"kind":"shape","id":"sh/nih4byhg","slide":9,"name":"r1c1","bbox":[238,278,260,76]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":9,"name":"text","text":"Most frequent adjacent pair","textPreview":"Most frequent adjacent pair","textChars":27,"textLines":1,"bbox":[250,289,236,58]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":9,"name":"r1c2","bbox":[498,278,250,76]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":9,"name":"text","text":"Best likelihood gain","textPreview":"Best likelihood gain","textChars":20,"textLines":1,"bbox":[510,289,226,58]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":9,"name":"r1c3","bbox":[748,278,240,76]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":9,"name":"text","text":"Least likelihood loss when removed","textPreview":"Least likelihood loss when removed","textChars":34,"textLines":1,"bbox":[760,289,216,58]}
+{"kind":"shape","id":"sh/sji5snel","slide":9,"name":"r1c4","bbox":[988,278,250,76]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":9,"name":"text","text":"Depends on selected algorithm","textPreview":"Depends on selected algorithm","textChars":29,"textLines":1,"bbox":[1000,289,226,58]}
+{"kind":"shape","id":"sh/adsji5sn","slide":9,"name":"r2c0","bbox":[42,354,196,76]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":9,"name":"text","text":"Tokenization","textPreview":"Tokenization","textChars":12,"textLines":1,"bbox":[54,365,172,58]}
+{"kind":"shape","id":"sh/s72x4nap","slide":9,"name":"r2c1","bbox":[238,354,260,76]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":9,"name":"text","text":"Usually deterministic","textPreview":"Usually deterministic","textChars":21,"textLines":1,"bbox":[250,365,236,58]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":9,"name":"r2c2","bbox":[498,354,250,76]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":9,"name":"text","text":"Deterministic longest-match in deployed tokenizers","textPreview":"Deterministic longest-match in deployed tokenizers","textChars":50,"textLines":1,"bbox":[510,365,226,58]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":9,"name":"r2c3","bbox":[748,354,240,76]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":9,"name":"text","text":"Deterministic or probabilistic sampling","textPreview":"Deterministic or probabilistic sampling","textChars":39,"textLines":1,"bbox":[760,365,216,58]}
+{"kind":"shape","id":"sh/dcbulwva","slide":9,"name":"r2c4","bbox":[988,354,250,76]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":9,"name":"text","text":"Can support subword sampling","textPreview":"Can support subword sampling","textChars":28,"textLines":1,"bbox":[1000,365,226,58]}
+{"kind":"shape","id":"sh/val87ed8","slide":9,"name":"r3c0","bbox":[42,430,196,76]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":9,"name":"text","text":"Unknowns","textPreview":"Unknowns","textChars":8,"textLines":1,"bbox":[54,441,172,58]}
+{"kind":"shape","id":"sh/donyd0z6","slide":9,"name":"r3c1","bbox":[238,430,260,76]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":9,"name":"text","text":"Character/byte fallback depends on design","textPreview":"Character/byte fallback depends on design","textChars":41,"textLines":1,"bbox":[250,441,236,58]}
+{"kind":"shape","id":"sh/vixczed8","slide":9,"name":"r3c2","bbox":[498,430,250,76]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":9,"name":"text","text":"Backs off to smaller pieces or unknown symbols","textPreview":"Backs off to smaller pieces or unknown symbols","textChars":46,"textLines":1,"bbox":[510,441,226,58]}
+{"kind":"shape","id":"sh/d0z61032","slide":9,"name":"r3c3","bbox":[748,430,240,76]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":9,"name":"text","text":"Keeps characters to preserve coverage","textPreview":"Keeps characters to preserve coverage","textChars":37,"textLines":1,"bbox":[760,441,216,58]}
+{"kind":"shape","id":"sh/y90je9cv","slide":9,"name":"r3c4","bbox":[988,430,250,76]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":9,"name":"text","text":"Raw text plus byte fallback options in newer models","textPreview":"Raw text plus byte fallback options in newer models","textChars":51,"textLines":1,"bbox":[1000,441,226,58]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":9,"name":"r4c0","bbox":[42,506,196,76]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":9,"name":"text","text":"Main strength","textPreview":"Main strength","textChars":13,"textLines":1,"bbox":[54,517,172,58]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":9,"name":"r4c1","bbox":[238,506,260,76]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":9,"name":"text","text":"Simple and efficient","textPreview":"Simple and efficient","textChars":20,"textLines":1,"bbox":[250,517,236,58]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":9,"name":"r4c2","bbox":[498,506,250,76]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":9,"name":"text","text":"Likelihood-aware vocabulary","textPreview":"Likelihood-aware vocabulary","textChars":27,"textLines":1,"bbox":[510,517,226,58]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":9,"name":"r4c3","bbox":[748,506,240,76]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":9,"name":"text","text":"Models segmentation ambiguity","textPreview":"Models segmentation ambiguity","textChars":29,"textLines":1,"bbox":[760,517,216,58]}
+{"kind":"shape","id":"sh/fepkzupw","slide":9,"name":"r4c4","bbox":[988,506,250,76]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":9,"name":"text","text":"Language-independent pipeline","textPreview":"Language-independent pipeline","textChars":29,"textLines":1,"bbox":[1000,517,226,58]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":9,"name":"source","text":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018; Radford et al. 2019.","textPreview":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018; Radford et al. 2019.","textChars":80,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":9,"name":"slide-number","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/160h6u","slide":9,"text":""}
+{"kind":"slide","id":"sl/qjhlbg","slide":10,"title":"Modern models mostly choose by engineering trade-off, not linguistic purity","textShapes":12}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":10,"name":"text","text":"Modern models mostly choose by engineering trade-off, not linguistic purity","textPreview":"Modern models mostly choose by engineering trade-off, not linguistic purity","textChars":75,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/d0z61032","slide":10,"name":"model-0","bbox":[42,178,374,330]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":10,"name":"text","text":"WordPiece","textPreview":"WordPiece","textChars":9,"textLines":1,"bbox":[68,208,310,44]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":10,"name":"text","text":"BERT","textPreview":"BERT","textChars":4,"textLines":1,"bbox":[68,286,310,52]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":10,"name":"text","text":"30k WordPiece vocabulary; continuation pieces support rare forms.","textPreview":"30k WordPiece vocabulary; continuation pieces support rare forms.","textChars":65,"textLines":1,"bbox":[68,374,310,88]}
+{"kind":"shape","id":"sh/d8bat47y","slide":10,"name":"model-1","bbox":[453,178,374,330]}
+{"kind":"textbox","id":"sh/knih4byh","slide":10,"name":"text","text":"BPE","textPreview":"BPE","textChars":3,"textLines":1,"bbox":[479,208,310,44]}
+{"kind":"textbox","id":"sh/val87ed8","slide":10,"name":"text","text":"GPT-2; GPT-4 family","textPreview":"GPT-2; GPT-4 family","textChars":19,"textLines":1,"bbox":[479,286,310,52]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":10,"name":"text","text":"GPT-2 uses byte-level BPE; OpenAI tokenizers are BPE-based.","textPreview":"GPT-2 uses byte-level BPE; OpenAI tokenizers are BPE-based.","textChars":59,"textLines":1,"bbox":[479,374,310,88]}
+{"kind":"shape","id":"sh/4r65wjud","slide":10,"name":"model-2","bbox":[864,178,374,330]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":10,"name":"text","text":"SentencePiece / Unigram","textPreview":"SentencePiece / Unigram","textChars":23,"textLines":1,"bbox":[890,208,310,44]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":10,"name":"text","text":"T5; mT5","textPreview":"T5; mT5","textChars":7,"textLines":1,"bbox":[890,286,310,52]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":10,"name":"text","text":"Raw-text tokenizer; multilingual variants use large shared vocabularies.","textPreview":"Raw-text tokenizer; multilingual variants use large shared vocabularies.","textChars":72,"textLines":1,"bbox":[890,374,310,88]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":10,"name":"source","text":"Sources: Devlin et al. 2018; Radford et al. 2019; Raffel et al. 2019; Xue et al. 2020; OpenAI tiktoken docs.","textPreview":"Sources: Devlin et al. 2018; Radford et al. 2019; Raffel et al. 2019; Xue et al. 2020; OpenAI tiktoken docs.","textChars":108,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":10,"name":"slide-number","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/qjhlbg","slide":10,"text":""}
+{"kind":"slide","id":"sl/yvlenu","slide":11,"title":"Low-resource and morphologically rich languages expose the real trade-offs","textShapes":33}
+{"kind":"textbox","id":"sh/90je9cvi","slide":11,"name":"text","text":"Low-resource and morphologically rich languages expose the real trade-offs","textPreview":"Low-resource and morphologically rich languages expose the real trade-offs","textChars":74,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/yd0z6103","slide":11,"name":"h-0","bbox":[42,148,196,54]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":11,"name":"text","text":"Challenge","textPreview":"Challenge","textChars":9,"textLines":1,"bbox":[54,162,172,24]}
+{"kind":"shape","id":"sh/g7adsji5","slide":11,"name":"h-1","bbox":[238,148,260,54]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":11,"name":"text","text":"BPE","textPreview":"BPE","textChars":3,"textLines":1,"bbox":[250,162,236,24]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":11,"name":"h-2","bbox":[498,148,250,54]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":11,"name":"text","text":"WordPiece","textPreview":"WordPiece","textChars":9,"textLines":1,"bbox":[510,162,226,24]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":11,"name":"h-3","bbox":[748,148,240,54]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":11,"name":"text","text":"Unigram","textPreview":"Unigram","textChars":7,"textLines":1,"bbox":[760,162,216,24]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":11,"name":"h-4","bbox":[988,148,250,54]}
+{"kind":"textbox","id":"sh/cvixczed","slide":11,"name":"text","text":"SentencePiece","textPreview":"SentencePiece","textChars":13,"textLines":1,"bbox":[1000,162,226,24]}
+{"kind":"shape","id":"sh/nap4r65w","slide":11,"name":"r0c0","bbox":[42,202,196,76]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":11,"name":"text","text":"Rich morphology","textPreview":"Rich morphology","textChars":15,"textLines":1,"bbox":[54,213,172,58]}
+{"kind":"shape","id":"sh/54zidony","slide":11,"name":"r0c1","bbox":[238,202,260,76]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":11,"name":"text","text":"Splits rare forms but may over-fragment","textPreview":"Splits rare forms but may over-fragment","textChars":39,"textLines":1,"bbox":[250,213,236,58]}
+{"kind":"shape","id":"sh/nyd0z610","slide":11,"name":"r0c2","bbox":[498,202,250,76]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":11,"name":"text","text":"Helps open vocabulary with likelihood-based pieces","textPreview":"Helps open vocabulary with likelihood-based pieces","textChars":50,"textLines":1,"bbox":[510,213,226,58]}
+{"kind":"shape","id":"sh/1032lszq","slide":11,"name":"r0c3","bbox":[748,202,240,76]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":11,"name":"text","text":"Can prefer alternate analyses","textPreview":"Can prefer alternate analyses","textChars":29,"textLines":1,"bbox":[760,213,216,58]}
+{"kind":"shape","id":"sh/obm58z25","slide":11,"name":"r0c4","bbox":[988,202,250,76]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":11,"name":"text","text":"Avoids language-specific pre-tokenization","textPreview":"Avoids language-specific pre-tokenization","textChars":41,"textLines":1,"bbox":[1000,213,226,58]}
+{"kind":"shape","id":"sh/65wjudg7","slide":11,"name":"r1c0","bbox":[42,278,196,76]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":11,"name":"text","text":"Low resource","textPreview":"Low resource","textChars":12,"textLines":1,"bbox":[54,289,172,58]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":11,"name":"r1c1","bbox":[238,278,260,76]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":11,"name":"text","text":"Frequency estimates can be noisy","textPreview":"Frequency estimates can be noisy","textChars":32,"textLines":1,"bbox":[250,289,236,58]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":11,"name":"r1c2","bbox":[498,278,250,76]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":11,"name":"text","text":"Needs enough data for useful likelihood estimates","textPreview":"Needs enough data for useful likelihood estimates","textChars":49,"textLines":1,"bbox":[510,289,226,58]}
+{"kind":"shape","id":"sh/orytsvu9","slide":11,"name":"r1c3","bbox":[748,278,240,76]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":11,"name":"text","text":"Subword regularization improved low-resource settings","textPreview":"Subword regularization improved low-resource settings","textChars":53,"textLines":1,"bbox":[760,289,216,58]}
+{"kind":"shape","id":"sh/72x4nap4","slide":11,"name":"r1c4","bbox":[988,278,250,76]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":11,"name":"text","text":"Works from raw data when tokenizers are unavailable","textPreview":"Works from raw data when tokenizers are unavailable","textChars":51,"textLines":1,"bbox":[1000,289,226,58]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":11,"name":"r2c0","bbox":[42,354,196,76]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":11,"name":"text","text":"No spaces / many scripts","textPreview":"No spaces / many scripts","textChars":24,"textLines":1,"bbox":[54,365,172,58]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":11,"name":"r2c1","bbox":[238,354,260,76]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":11,"name":"text","text":"Often depends on pre-tokenization","textPreview":"Often depends on pre-tokenization","textChars":33,"textLines":1,"bbox":[250,365,236,58]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":11,"name":"r2c2","bbox":[498,354,250,76]}
+{"kind":"textbox","id":"sh/0z61032l","slide":11,"name":"text","text":"Boundary conventions must be designed","textPreview":"Boundary conventions must be designed","textChars":37,"textLines":1,"bbox":[510,365,226,58]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":11,"name":"r2c3","bbox":[748,354,240,76]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":11,"name":"text","text":"Probabilistic pieces help, but normalization matters","textPreview":"Probabilistic pieces help, but normalization matters","textChars":52,"textLines":1,"bbox":[760,365,216,58]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":11,"name":"r2c4","bbox":[988,354,250,76]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":11,"name":"text","text":"Designed for raw sentences and lossless whitespace","textPreview":"Designed for raw sentences and lossless whitespace","textChars":50,"textLines":1,"bbox":[1000,365,226,58]}
+{"kind":"shape","id":"sh/sneloj2t","slide":11,"name":"r3c0","bbox":[42,430,196,76]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":11,"name":"text","text":"Limitations","textPreview":"Limitations","textChars":11,"textLines":1,"bbox":[54,441,172,58]}
+{"kind":"shape","id":"sh/at47y1kr","slide":11,"name":"r3c1","bbox":[238,430,260,76]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":11,"name":"text","text":"Greedy merges can waste vocabulary","textPreview":"Greedy merges can waste vocabulary","textChars":34,"textLines":1,"bbox":[250,441,236,58]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":11,"name":"r3c2","bbox":[498,430,250,76]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":11,"name":"text","text":"Training details are less standardized","textPreview":"Training details are less standardized","textChars":38,"textLines":1,"bbox":[510,441,226,58]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":11,"name":"r3c3","bbox":[748,430,240,76]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":11,"name":"text","text":"More complex training and sampling","textPreview":"More complex training and sampling","textChars":34,"textLines":1,"bbox":[760,441,216,58]}
+{"kind":"shape","id":"sh/tovahoza","slide":11,"name":"r3c4","bbox":[988,430,250,76]}
+{"kind":"textbox","id":"sh/032lszqt","slide":11,"name":"text","text":"Still inherits the chosen subword model's biases","textPreview":"Still inherits the chosen subword model's biases","textChars":48,"textLines":1,"bbox":[1000,441,226,58]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":11,"name":"r4c0","bbox":[42,506,196,76]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":11,"name":"text","text":"Nepali relevance","textPreview":"Nepali relevance","textChars":16,"textLines":1,"bbox":[54,517,172,58]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":11,"name":"r4c1","bbox":[238,506,260,76]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":11,"name":"text","text":"Inflection and compounding can fragment tokens","textPreview":"Inflection and compounding can fragment tokens","textChars":46,"textLines":1,"bbox":[250,517,236,58]}
+{"kind":"shape","id":"sh/bulwval8","slide":11,"name":"r4c2","bbox":[498,506,250,76]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":11,"name":"text","text":"Useful if trained on enough Nepali text","textPreview":"Useful if trained on enough Nepali text","textChars":39,"textLines":1,"bbox":[510,517,226,58]}
+{"kind":"shape","id":"sh/t47y1kre","slide":11,"name":"r4c3","bbox":[748,506,240,76]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":11,"name":"text","text":"Promising for ambiguous morphology","textPreview":"Promising for ambiguous morphology","textChars":34,"textLines":1,"bbox":[760,517,216,58]}
+{"kind":"shape","id":"sh/g7adsji5","slide":11,"name":"r4c4","bbox":[988,506,250,76]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":11,"name":"text","text":"Good fit for multilingual and mixed-script corpora","textPreview":"Good fit for multilingual and mixed-script corpora","textChars":50,"textLines":1,"bbox":[1000,517,226,58]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":11,"name":"source","text":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textPreview":"Sources: Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textChars":59,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":11,"name":"slide-number","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/yvlenu","slide":11,"text":""}
+{"kind":"slide","id":"sl/4miw9h","slide":12,"title":"The conclusion: subword tokenization replaces most preprocessing, but not all...","textShapes":7}
+{"kind":"textbox","id":"sh/0fepkzup","slide":12,"name":"text","text":"The conclusion: subword tokenization replaces most preprocessing, but not all linguistic thinking","textPreview":"The conclusion: subword tokenization replaces most preprocessing, but not all linguistic thinking","textChars":97,"textLines":1,"bbox":[42,36,1120,88]}
+{"kind":"shape","id":"sh/bulwval8","slide":12,"name":"left-panel","bbox":[42,172,560,390]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":12,"name":"right-panel","bbox":[678,172,560,390]}
+{"kind":"textbox","id":"sh/tovahoza","slide":12,"name":"text","text":"Answer to the assignment question","textPreview":"Answer to the assignment question","textChars":33,"textLines":1,"bbox":[74,204,500,42]}
+{"kind":"textbox","id":"sh/032lszqt","slide":12,"name":"text","text":"- Stemming and lemmatization are usually not applied before BPE-style LLM tokenization\n- They can destroy reversibility and remove information the model may need\n- They remain relevant for search, retrieval, feature engineering, and analysis","textPreview":"- Stemming and lemmatization are usually not applied before BPE-style LLM tokenization | - They can destroy reversibility and remove info...","textChars":241,"textLines":3,"bbox":[74,274,488,240]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":12,"name":"text","text":"Final takeaway","textPreview":"Final takeaway","textChars":14,"textLines":1,"bbox":[710,204,500,42]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":12,"name":"text","text":"- BPE is the simple frequency baseline\n- WordPiece changes the merge objective to likelihood\n- Unigram changes the learning direction and can sample segmentations\n- SentencePiece makes the pipeline raw-text and language-independent","textPreview":"- BPE is the simple frequency baseline | - WordPiece changes the merge objective to likelihood | - Unigram changes the learning direction...","textChars":231,"textLines":4,"bbox":[710,274,488,240]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":12,"name":"source","text":"Sources: Lovins 1968; Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textPreview":"Sources: Lovins 1968; Wu et al. 2016; Kudo 2018; Kudo & Richardson 2018.","textChars":72,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":12,"name":"slide-number","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/4miw9h","slide":12,"text":""}
+{"kind":"slide","id":"sl/jh8lkn","slide":13,"title":"References used in the deck","textShapes":4}
+{"kind":"textbox","id":"sh/nap4r65w","slide":13,"name":"text","text":"References used in the deck","textPreview":"References used in the deck","textChars":27,"textLines":1,"bbox":[42,36,1120,70]}
+{"kind":"textbox","id":"sh/cvixczed","slide":13,"name":"text","text":"- Lovins, J. B. (1968). Development of a stemming algorithm.\n- Schuster, M. & Nakajima, K. (2012). Japanese and Korean Voice Search.\n- Wu, Y. et al. (2016). Google's Neural Machine Translation System.\n- Kudo, T. (2018). Subword Regularization.\n- Kudo, T. & Richardson, J. (2018). SentencePiece.\n- Devlin, J. et al. (2018). BERT.\n- Radford, A. et al. (2019). Language Models are Unsupervised Multitask Learners.\n- Raffel, C. et al. (2019). T5.\n- Xue, L. et al. (2020). mT5.\n- OpenAI tiktoken documentation / repository for GPT-family BPE tokenizer context.","textPreview":"- Lovins, J. B. (1968). Development of a stemming algorithm. | - Schuster, M. & Nakajima, K. (2012). Japanese and Korean Voice Search. | ...","textChars":555,"textLines":10,"bbox":[64,138,1110,430]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":13,"name":"source","text":"Sources: all citations above.","textPreview":"Sources: all citations above.","textChars":29,"textLines":1,"bbox":[42,662,980,26]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":13,"name":"slide-number","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1184,658,54,28]}
+{"kind":"notes","id":"nt/jh8lkn","slide":13,"text":""}
